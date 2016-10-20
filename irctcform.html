@@ -1,0 +1,392 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>scorecard</title>
+		<meta charset="utf-8">
+        <style>
+            form {
+                
+                margin-left: 350px;
+            }
+            legend {
+                font-size: 16pt;
+            }
+            p{
+                color:red;
+                font-size: 12pt;
+                display: inline;
+            }
+            div {
+                background: powderblue;
+            }
+            body {
+                font-size: 12pt;              
+            }
+            div.sub {
+                text-align: center;
+            }
+            div#section {
+                color: blue;
+                background: none;
+                border: 2px solid blue; 
+                border-bottom: 15px solid blue;     
+            }
+             div #right {
+                display:block;
+                float: right;
+                overflow: hidden;
+                background: none;
+            }
+            div#left {
+                display:block;
+                float: left;
+                overflow: hidden;
+                background: none;
+            }
+            h3,h5,h6 {
+                line-height: 0.5pt;
+            }
+        </style>
+    </head>
+    <body>
+          <div id="section">
+              <div id="left">
+                <h3>Indian Railway Catering and Tourism Corporation Limited</h3>
+                <h5>A Government of India Enterprise</h5>
+            </div>
+            <div id="right">
+                <h3>Centre For Railway Information Systems</h3>
+                <h6>(An Organization for the Ministry of Railways,Govt. of India)</h6> 
+            </div>
+          <br style="clear: left;" />
+          </div>
+        <br>
+        <form>
+            <fieldset>
+                <legend>Individual Registration</legend>
+                <p>*mandatory</p>
+                <div>GARBAGE/JUNK VALUES IN PROFILE MAY LEAD TO DEACTIVATION<br>
+                 Please use a valid E-Mail ID and mobile number in registration.</div>
+                 <br>
+                <table>
+                    <tr>
+                       <td>User Id:<p>*</p></td> 
+                        <td style="color:blue"><input type="text" name="uid"/> Check availability</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td colspan="2">Between 3 to 10 Character.only letter,number and underscore are allowed </td>
+                        
+                    </tr>
+                    <tr>
+                        <td>Password:<p>*</p></td>
+                        <td><input type="password" name="passw"></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td colspan="2">Min 8 character & Max 15 character. Password must contain at least one small & <br>one capital alphabet and numeric digit.</td>
+                    </tr>
+                    <tr>
+                        <td>Confirm Password:<p>*</p></td>
+                        <td><input type="password" name="cpassw"></td>
+                    </tr>
+                    <tr>
+                        <td style="color:blue">If you forget your password, we will identify you with this information</td>
+                    </tr>
+                    <tr>
+                        <td>Security Question:<p>*</p></td>
+                        <td><input list="questions" name="que">
+                            <datalist id="questions">
+                                <option selected="true" disabled value="Select your Security Question"></option>
+                                <option value="what is your pet name?"></option>
+                                <option value="whose was your childhood hero?"></option>
+                                <option value="what was the name of your first school?"></option>
+                                <option value="what is your father's middle name?"></option>
+                                <option value="what is your all time favorite sport ?"></option>
+                            </datalist>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Security Answer:<p>*</p></td>
+                        <td><input type="text" name="secans"></td>
+                    </tr>
+                    <tr>
+                        <td>Preferred Language:<p>*</p></td>
+                        <td><input list="lang" name="lang">
+                            <datalist id="lang">
+                                <option value="English" selected></option>
+                                <option value="Hindi"></option>
+                            </datalist>
+                        </td>
+                    </tr>
+                </table>
+                 <div>Personal Details</div>
+                <table>
+                    <tr>
+                        <td>First Name:<p>*</p></td>
+                        <td><input type="text" name="fname" /></td>
+                    </tr>
+                    <tr>
+                        <td>Middle Name:<p>*</p></td>
+                        <td><input type="text" name="mname">(Optional)</td>
+                    </tr>
+                    <tr>
+                        <td>Last Name:<p>*</p></td>
+                        <td><input type="text" name="lname" /></td>
+                    </tr>
+                    <tr>
+                        <td>Gender:<p>*</p></td>
+                        <td><input type="radio" name="gen" value="male">Male
+                            <input type="radio" name="gen" value="female">Female
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Marital Status:<p>*</p></td>
+                        <td><input type="radio" name="mst" value="married">Married
+                            <input type="radio" name="mst" value="unmarried">UnMarried
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Date Of Birth:<p>*</p></td>
+                        <td><input type="date" name="dob"></td>
+                    </tr>
+                    <tr>
+                        <td>Occupation:<p>*</p></td>
+                        <td><input list="occ" name="occ">
+                            <datalist id="occ">
+                                <option value="Government" selected></option>
+                                <option value="public"></option>
+                                 <option value="private"></option>
+                                 <option value="selfemployed"></option>
+                                 <option value="student"></option>
+                                 <option value="others"></option>
+                            </datalist>      
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>AadharCard No:</td>
+                        <td><input type="number" name="ano">(Optional)</td>
+                    </tr>
+                    <tr>
+                        <td>PAN No:</td>
+                        <td><input type="text" name="panno">(Optional)</td>
+                    </tr>
+                    <tr>
+                        <td>Email:<p>*</p></td>
+                        <td><input type="email" name="email"></td>
+                    </tr>
+                    <tr>
+                        <td>Mobile No:<p>*</p></td>
+                        <td>+91<input type="tel" name="mno"></td>
+                    </tr>
+                    <tr>
+                        <td>Nationality:<p>*</p></td>
+                        <td><input list="nation" name="nation">
+                            <datalist>
+                                <option value="india"></option>
+                                 <option value="iran"></option>
+                                <option value="indonesia"></option>
+                               <option value="australia"></option>
+                            </datalist>
+                        </td>    
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td style="color:blue">International users should contact care@irctc.co.in for verfication of their account at IRCTC after <br>online submission of registration forms at www.irctc.co.in along with their nationality documents such as passport etc. for due verification.</td>
+                    </tr>
+                </table>
+                <div>Residential Address</div>
+                <table>
+                    <tr>
+                        <td>Flat/Door/BlockNo:<p>*</p></td>
+                        <td><input type="text" name="fno"></td>
+                    </tr>
+                    <tr>
+                        <td>Street/Lane:</td>
+                        <td><input type="text" name="streetname">(optional)</td>
+                    </tr>
+                    <tr>
+                        <td>Area/Locality:</td>
+                        <td><input type="text" name="areaname">(optional)</td>
+                    </tr>
+                    <tr>
+                        <td>Country:<p>*</p></td>
+                        <td><input list="country" name="country">
+                            <datalist id="country">
+                                <option value="india"></option>
+                                 <option value="autralia"></option>
+                                <option value="syria"></option>
+                                <option value="srilanka"></option>
+                            </datalist>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>PinCode:<p>*</p></td>
+                        <td><input type="text" name="pincode"></td>
+                     </tr>
+                    <tr>
+                        <td>State:<p>*</p></td>
+                        <td><input list="state" name="state">
+                            <datalist id="state">
+                                <option value="AP">/<option>
+                                 <option value="telangana"></option>
+                                <option value="kerela">/<option>
+                                <option value="tamilnadu"></option>
+                            </datalist>
+                        </td>
+                        <td></td>
+                        <td>(Other)</td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>City/District:<p>*</p></td>
+                        <td><input list="city" name="city">
+                            <datalist id="city">
+                                <option value="guntur">/<option>
+                                 <option value="hyderabad"></option>
+                                <option value="chennai"></option>
+                                <option value="banglore"></option>
+                            </datalist>
+                        </td>
+                         <td></td>
+                        <td>(Other)</td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>Post Office:<p>*</p></td>
+                        <td><input list="po" name="po">
+                            <datalist id="po">
+                                <option value="i"></option>
+                                 <option value="a"></option>
+                                <option value="s"></option>
+                                <option value="r"></option>
+                            </datalist>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Phone:<p>*</p></td>
+                        <td><input type="tel" name="ll"></td>
+                    </tr>
+                    <tr>
+                        <td style="color:blue">Copy Residence to Permanent Address:</td>
+                        <td><input type="radio" name="res" value="yes">Yes
+                            <input type="radio" name="res" value="No">No
+                        </td>
+                    </tr>
+                </table>
+                <div>Permanent Address</div>
+                <table>
+                    <tr>
+                        <td>Flat/Door/BlockNo:<p>*</p></td>
+                        <td><input type="text" name="fno"></td>
+                    </tr>
+                    <tr>
+                        <td>Street/Lane:</td>
+                        <td><input type="text" name="streetname">(optional)</td>
+                    </tr>
+                    <tr>
+                        <td>Area/Locality:</td>
+                        <td><input type="text" name="areaname">(optional)</td>
+                    </tr>
+                    <tr>
+                        <td>Country:<p>*</p></td>
+                        <td><input list="country" name="country">
+                            <datalist id="country">
+                                <option value="india"></option>
+                                 <option value="autralia"></option>
+                                <option value="syria"></option>
+                                <option value="srilanka"></option>
+                            </datalist>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>PinCode:<p>*</p></td>
+                        <td><input type="text" name="pincode"></td>
+                     </tr>
+                    <tr>
+                        <td>State:<p>*</p></td>
+                        <td><input list="state" name="state">
+                            <datalist id="state">
+                                <option value="AP">/<option>
+                                 <option value="telangana"></option>
+                                <option value="kerela">/<option>
+                                <option value="tamilnadu"></option>
+                            </datalist>
+                        </td>
+                        <td></td>
+                        <td>(Other)</td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>City/District:<p>*</p></td>
+                        <td><input list="city" name="city">
+                            <datalist id="city">
+                                <option value="guntur">/<option>
+                                 <option value="hyderabad"></option>
+                                <option value="chennai"></option>
+                                <option value="banglore"></option>
+                            </datalist>
+                        </td>
+                        <td></td>
+                        <td>(Other)</td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>Post Office:<p>*</p></td>
+                        <td><input list="po" name="po">
+                            <datalist id="po">
+                                <option value="i"></option>
+                                 <option value="a"></option>
+                                <option value="s"></option>
+                                <option value="r"></option>
+                            </datalist>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Phone:<p>*</p></td>
+                        <td><input type="tel" name="ll"></td>
+                    </tr>
+                     <tr>
+                         <td></td>
+                         <td style="font-size:19pt"> L U <sub>k</sub> 5 <sup>o</sup> <a style="color:blue;font-size:12pt" href="">refresh</a></td>
+                    </tr>
+                    <tr>
+                        <td>Type code shown</td>
+                        <td><input tpe="text" name="code"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Captcha letters are case sensitive and to be entered in Upper Case only</td>
+                    </tr>
+                </table>
+                <div>Subscription to IRCTC New letters/ Promotions/IRCTC SBI Card through email/ SMS</div>
+                <table style="color:blue">
+                    <tr>
+                        <td>IRCTC Newsletters</td>
+                        <td><input type="radio" name="news" value="Yes">YES
+                            <input type="radio" name="news" value="No">NO
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Commercial Promotions</td>
+                        <td><input type="radio" name="cpro" value="Yes">YES
+                            <input type="radio" name="cpro" value="No">NO
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Please inform me about IRCTC SBI Card through phone*</td>
+                        <td><input type="radio" name="sbi" value="Yes">YES
+                            <input type="radio" name="sbi" value="No">NO
+                        </td>
+                    </tr>
+                </table>
+                <div class="sub">
+<!--                    <input  style="align:center:border:none" type="submit" value="Submit Registration Form">-->
+                      <a style="font-size:19pt;text-align:center;color:blue"> Submit Registration Form >>></a>
+                </div>
+            </fieldset>
+            
+        </form>
+    </body>
+</html>
